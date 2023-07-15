@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://127.0.0.1:27017/Product_API")
+  .connect("mongodb+srv://asulthan088:Asulthan088@cluster0.nou7gae.mongodb.net/Product-API?retryWrites=true&w=majority")
   .then(() => {
     console.log("mongoose connection is successfull...");
   })
