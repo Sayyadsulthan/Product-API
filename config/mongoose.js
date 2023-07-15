@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 mongoose
-  .connect("mongodb+srv://asulthan088:Asulthan088@cluster0.nou7gae.mongodb.net/Product-API?retryWrites=true&w=majority")
+  .connect(process.env.DB_URI)
   .then(() => {
     console.log("mongoose connection is successfull...");
   })
